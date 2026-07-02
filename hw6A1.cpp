@@ -5,14 +5,14 @@ using namespace std;
 
 
 
-class fish {
+class Fish {
     private:
         string name;
         string habitat;
         int value;
 
     public: // public data 
-        fish(string n, string h, int v){ // constructor to acces private data to public
+        Fish(string n, string h, int v){ // constructor to acces private data to public
             name = n;
             habitat = h;
             value = v;
@@ -50,7 +50,7 @@ int main() {
     string habitat;
     int value;
 
-    fish starterFish("Sunfish", "river", 30); // starting sunfish
+    Fish starterFish("Sunfish", "river", 30); // starting sunfish
 
     //user input for additional fish
     cout << "Enter a fish name: ";
@@ -65,10 +65,10 @@ int main() {
     //headers
     cout << "--- Fish Catalog ---" << endl;
 
-    // void describe function to retrieve values using getters
-        cout << "Name: " << starterFish.getName() << endl;
-        cout << "Habitat: " << starterFish.getHabitat() << endl;
-        cout << "Value: " << starterFish.getValue() << endl;
+    // output block
+    cout << "Name: " << starterFish.getName() << endl;
+    cout << "Habitat: " << starterFish.getHabitat() << endl;
+    cout << "Value: " << starterFish.getValue() << endl;
     
     return 0;
 }
